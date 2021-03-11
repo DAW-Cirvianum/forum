@@ -31,5 +31,8 @@ public class Client extends User{
         this.isOlder18=b;
     }
 
-
+    @Override
+    public boolean isOlder18() {
+        return this.isOlder18;
+    }
 }

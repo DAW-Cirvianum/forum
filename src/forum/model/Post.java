@@ -6,12 +6,14 @@ public class Post {
     private String subject, body;
     private LocalDateTime created_at;
     private User author;
+    private boolean older18;
 
-    public Post(String subject, String body, LocalDateTime ldtWrited, User author) {
+    public Post(String subject, String body, LocalDateTime ldtWrited, User author, boolean older18) {
         this.subject = subject;
         this.body = body;
         this.created_at = ldtWrited;
         this.author = author;
+        this.older18 = older18;
     }
 
     public String getSubject() {
@@ -44,5 +46,9 @@ public class Post {
 
     public void setAuthor(User author) {
         this.author = author;
+    }
+
+    public boolean isOlder18() {
+        return older18;
     }
 }

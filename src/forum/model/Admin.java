@@ -28,4 +28,9 @@ public class Admin extends User{
                 ", pass='" + pass + '\'' +
                 '}';
     }
+
+    @Override
+    public boolean isOlder18() {
+        return true;
+    }
 }
